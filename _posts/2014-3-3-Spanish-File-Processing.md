@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spanish File pre-processing!
+title: Spanish File pre-processing Introduction - Part 1!
 ---
 
 This post will cover the steps for pre-processing the Spanish files and writing their tools. 
