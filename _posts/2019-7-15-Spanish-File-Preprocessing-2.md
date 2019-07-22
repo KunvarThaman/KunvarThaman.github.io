@@ -28,7 +28,7 @@ python preprocess.py -inf 2018-07-13_0730_ES_Antena-3_El_hormiguero.txt -t 0 > o
 
 We want to determine which words form the starting of a sentence. Hence we would look for the words following a stop-punctuation mark, such as . or ! or ?. However, when we look at output_messy.txt, we can see that there are <font> tags to indicate the speaker change, sometimes at the beginning of a new line such as :
 
-\<font color="#00ff00">que pueden matizar posiciones.\</font> \<font color="#00ff00">Pero hay que recordar\</font> \<font color="#00ff00">las verdades del barquero.
+font color="#00ff00"que pueden matizar posiciones./font font color="#00ff00"Pero hay que recordar font> font color="#00ff00">las verdades del barquero.
 
 They’re going to interfere when we are collecting the words which are at the beginning of the sentence for the frequency list. Here, the output contains the font tags after the period, so, we would have to skip over them to get to the first word. I decided to create a temporary file where we would store the text file after removing the font tags. This would make finding the words at the beginning of the sentence straightforward.
 
@@ -36,7 +36,7 @@ So, we create a new output file output_clean.txt which removes all the font tags
 
 Looking carefully, I found that the number of font tags being used wasn’t large. So, I manually searched for them and created a list as:
 
-delete_list = ['\</font>','\<font color="#00ffff">','\<font color="#00ff00">', '\<font color="#ffff00">']
+delete_list = ['/font','font color="#00ffff"','font color="#00ff00"', 'font color="#ffff00"']
 
 The rest of the process is quite straightforward as:
 
