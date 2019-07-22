@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Spanish File pre-processing - Part 4!
+---
 
 In this post, we will discuss the first task of finding potential speakers.
 
