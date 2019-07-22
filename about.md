@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm Kunvar Thaman, and I've been selected for the Google Summer of Code 2019 with Red Hen Lab. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This project aims to work on the multilingual Pipeline project started in 2017 and introduce the additional changes and alternate approaches discovered since its termination.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[kunvarthaman2279@gmail.com](mailto:email@domain.com)
