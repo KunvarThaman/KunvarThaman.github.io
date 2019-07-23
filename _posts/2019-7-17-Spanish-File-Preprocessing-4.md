@@ -3,7 +3,7 @@ layout: post
 title: Spanish File pre-processing - Part 4!
 ---
 
-In this post, we will discuss the first task of finding potential speakers.
+In this post, we will discuss the three task of finding potential speakers and creating all the frequency lists.
 
 First of all, let’s import the necessary libraries:
 
@@ -46,3 +46,10 @@ Counter({'No': 68, 'Y': 54, 'Es': 52, 'La': 42, 'Pero': 40, 'Lo': 34, 'El': 30, 
 
 We compile them now into an excel sheet for easy readability using the text_to_csv.py.
 
+The tasks of finding the frequency of words in the round and square brackets are quite straightforward after the previous task. There’s no need to use the output file with the font tags removed.
+We can directly use the regex of :
+
+r'\[.*?\]' and r'\(.*?\)' 
+
+for the square and round bracketed words respectively.
+The rest of the process is the same as the first one.
