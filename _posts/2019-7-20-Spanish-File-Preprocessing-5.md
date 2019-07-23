@@ -3,8 +3,6 @@ layout: post
 title: Spanish File pre-processing - Part 5!
 ---
 
-Spanish Pre-processing part 5!
-
 The speaker change occurs in two different ways, as verified by a native speaker after looking at several instances and then comparing the text with the audio in the respective clips.
 
 The first way is by the font tags which have some color associated with them according to the speaker. It’s ensured that the colors never overlap for consecutive speaker changes. 
