@@ -53,3 +53,7 @@ We can directly use the regex of :
 
 for the square and round bracketed words respectively.
 The rest of the process is the same as the first one.
+
+## Note: 
+
+it would be wrong to treat every word at the beginning of a line followed by a colon as metainformation. These frequency lists are being examined by native speakers who will then classify them into categories, including speaker or non-speaker information.
