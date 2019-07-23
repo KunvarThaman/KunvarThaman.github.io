@@ -19,7 +19,7 @@ For the list from which we want matches:
 
  dashes = 
 
-re.compile(('(\.\s\s-)|(\.\s-)|(\.-)|(\?-)|(\?\s-)|(\?\s\s-)|(!-)|(!\s-)|(!\s\s-)|(S"____"(\d+)\s-)|(S"____"(\d+)\s\s-)| (S"____"(\d+)-)')
+re.compile(('(\.\s\s-)|(\.\s-)|(\.-)|(\?-)|(\?\s-)|(\?\s\s-)|(!-)|(!\s-)|(!\s\s-)|(S\__\__(\d+)\s-)|(S___\_(\d+)\s\s-)| (S___\_(\d+)-)')
 
 And we would replace it with the string: ‘</turn> - \<turn>’ so that every dash will be succeeded by a turn tag that ends just before the next dash. This doesn’t cause any problem with the first dash as the speaker#1 doesn’t have any dash since there’s no speaker ‘change’ at the beginning of the file.
 
