@@ -11,7 +11,7 @@ The other way, as was in Russian files, is by dashes at the beginning of the sen
 
 Our goal here is to introduce turn tags wherever such dashes occur, and introduce turn tags in place of font tags whenever they occur. In the latter, we want to retain the color information. Hence, the new tag would look something like:
 
-\’<turn speaker = “color_code” >’
+'\<turn speaker = “color_code” >’
 
 We call the speaker_dash.py which has a function called speaker_change which takes in the inputs of the filename, list from which we want matches, and the string to replace it with.
 
@@ -19,9 +19,11 @@ For the list from which we want matches:
 
  dashes = 
 
-re.compile(('(\.\s\s-)|(\.\s-)|(\.-)|(\?-)|(\?\s-)|(\?\s\s-)|(!-)|(!\s-)|(!\s\s-)|(S\__\__(\d+)\s-)|(S___\_(\d+)\s\s-)| (S___\_(\d+)-)')
+re.compile(('(\.\s\s-)|(\.\s-)|(\.-)|(\?-)|(\?\s-)|(\?\s\s-)|(!-)|(!\s-)|(!\s\s-)|(S(\d+)\s-)|(S(\d+)\s\s-)|(S(\d+)-)')
 
-And we would replace it with the string: ‘</turn> - \<turn>’ so that every dash will be succeeded by a turn tag that ends just before the next dash. This doesn’t cause any problem with the first dash as the speaker#1 doesn’t have any dash since there’s no speaker ‘change’ at the beginning of the file.
+{In the last three brackets, there are three underscore symbols after S, not visible here, I'll fix that later.}
+
+And we would replace it with the string: ‘\</turn> - \<turn>’ so that every dash will be succeeded by a turn tag that ends just before the next dash. This doesn’t cause any problem with the first dash as the speaker#1 doesn’t have any dash since there’s no speaker ‘change’ at the beginning of the file.
 
 Next, we replace the font tags with the turn tags, retaining the color information. 
 
