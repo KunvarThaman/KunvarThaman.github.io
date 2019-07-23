@@ -19,9 +19,9 @@ For the list from which we want matches:
 
  dashes = 
 
-re.compile(('(\.\s\s-)|(\.\s-)|(\.-)|(\?-)|(\?\s-)|(\?\s\s-)|(!-)|(!\s-)|(!\s\s-)|(S____(\d+)\s-)|(S____(\d+)\s\s-)| (S____(\d+)-)')
+re.compile(('(\.\s\s-)|(\.\s-)|(\.-)|(\?-)|(\?\s-)|(\?\s\s-)|(!-)|(!\s-)|(!\s\s-)|(S"____"(\d+)\s-)|(S"____"(\d+)\s\s-)| (S"____"(\d+)-)')
 
-And we would replace it with the string: ‘</turn> - <turn>’ so that every dash will be succeeded by a turn tag that ends just before the next dash. This doesn’t cause any problem with the first dash as the speaker#1 doesn’t have any dash since there’s no speaker ‘change’ at the beginning of the file.
+And we would replace it with the string: ‘</turn> - \<turn>’ so that every dash will be succeeded by a turn tag that ends just before the next dash. This doesn’t cause any problem with the first dash as the speaker#1 doesn’t have any dash since there’s no speaker ‘change’ at the beginning of the file.
 
 Next, we replace the font tags with the turn tags, retaining the color information. 
 
