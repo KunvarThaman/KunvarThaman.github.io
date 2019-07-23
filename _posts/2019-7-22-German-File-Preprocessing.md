@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: German File pre-processing - Part 1
+---
 
 At this point in the project, we move on to the German files.
 
