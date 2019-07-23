@@ -7,9 +7,9 @@ Similar to the Russian files, we wish to determine when the speaker changes and 
 
 It was decided to find the instances where there were, say, <font color = “#00ff00”> and other similar font tags. Earlier, it was believed that these tags indicated the speaker change. After going through several files and verifying with another Red Hen, Javier, it was found that in some cases, the font tags, and in others, dashes at the beginning of the sentence were being used to indicate the speaker change.
 
-To have a better representation, it was decided to use the <turn> and </turn> tags to indicate the speaker change instead. 
+To have a better representation, it was decided to use the '<turn>' and "</turn>" tags to indicate the speaker change instead. 
 
-We have to first find all the files containing the font tags, although not immediately required by the current task.
+We have to first find all the files containing the font tags, although not immediately required for the current task.
 
 $grep -iRl “<font” ./
 
