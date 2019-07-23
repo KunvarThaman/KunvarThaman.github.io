@@ -1,3 +1,8 @@
+---
+layout: post
+title: Russian File pre-processing
+---
+
 ## Week 1 (May 27 – June 2)
 
 Firstly, I read the pages on Red Hen Data format, compared with the text files on Gallina to understand what denoted what, the coding standards etc.
