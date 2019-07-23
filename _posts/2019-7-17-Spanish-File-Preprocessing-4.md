@@ -49,7 +49,7 @@ We compile them now into an excel sheet for easy readability using the text_to_c
 The tasks of finding the frequency of words in the round and square brackets are quite straightforward after the previous task. There’s no need to use the output file with the font tags removed.
 We can directly use the regex of :
 
-r'\[.*?\]' and r'\(.*?\)' 
+[. * ? \] and ( . * ? \)
 
 for the square and round bracketed words respectively.
 The rest of the process is the same as the first one.
