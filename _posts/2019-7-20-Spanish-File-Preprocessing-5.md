@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Spanish File pre-processing - Part 5!
+---
 
 Spanish Pre-processing part 5!
 
