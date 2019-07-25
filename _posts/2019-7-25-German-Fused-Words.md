@@ -5,9 +5,12 @@ title: German contracted words problem explained
 
 In German, it is common to combine two (or more) words so as to be more efficient while writing or speaking. A few examples are :
 
-zu + der = Zur
-an + dem = am
-in + dem = im
+zu + der = Zur,
+
+an + dem = am,
+
+in + dem = im,
+
 Bestsellung = order, and Bestelldatum = order date.
 
 Such fused words are called contractions.
